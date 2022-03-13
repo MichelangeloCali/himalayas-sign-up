@@ -1,0 +1,122 @@
+.logo a {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 40px 60px;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.form-items {
+  display: flex;
+  justify-content: start;
+  justify-self: stretch;
+  align-items: center;
+  box-sizing: border-box;
+  border: solid 2px #9c9c9c5e;
+  border-radius: 4px;
+}
+
+.form-items input[type="password"],
+.form-items input[type="email"] {
+  padding: 7px;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.form-items form {
+  display: flex;
+  align-items: center;
+}
+
+.icon-email,
+.icon-password {
+  max-width: 16px;
+  padding-left: 7px;
+}
+
+.button-google {
+  display: flex;
+  justify-content: center;
+  justify-self: stretch;
+  border: var(--cor-3) solid 1.5px;
+  border-radius: 4px;
+  padding: 5px;
+  align-items: center;
+  font-weight: 550;
+  transition: 0.3s;
+}
+
+.button-google:hover {
+  background-color: #966dd742;
+}
+
+.button-google::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background: url(../img/google.png) no-repeat;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  justify-self: stretch;
+  background-color: var(--cor-4);
+  padding: 7px;
+  border: none;
+  border-radius: 4px;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #8135fc;
+  cursor: pointer;
+}
+
+.button::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url(../img/seta.svg);
+  transition: 0.3s;
+}
+
+.button:hover::after {
+  transform: translateX(6px);
+}
+
+@media (max-width: 600px) {
+  .logo a {
+    gap: 5px;
+    padding: 20px 40px;
+  }
+  .logo img {
+    width: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo a {
+    padding: 15px 20px;
+  }
+  .logo img {
+    width: 25px;
+  }
+}
